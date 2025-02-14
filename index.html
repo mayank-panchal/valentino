@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .letter {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .hidden-message {
+            margin-top: 20px;
+        }
+        .reveal-btn {
+            padding: 10px 20px;
+            background: #ff6b81;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day, My Love! ❤️</h1>
+    
+    <div class="letter">
+        <p>My love, you are the most beautiful, smart, and kind person I've ever met. Every moment with you is a blessing, and I can't wait to create even more memories with you. You make my world brighter, and I love you more than words can say. Happy Valentine's Day! 💖</p>
+    </div>
+    
+    <h2>Our Beautiful Memories</h2>
+    <div class="gallery">
+        <img src="photo1 (1).png" alt="Memory 1">
+        <img src="photo1 (2).png" alt="Memory 2">
+        <img src="photo1 (3).png" alt="Memory 3">
+        <img src="photo1 (4).png" alt="Memory 4">
+    </div>
+    
+    <div class="hidden-message">
+        <button class="reveal-btn" onclick="revealMessage()">Click to Reveal a Special Message</button>
+        <div class="message" id="specialMessage">You are mine forever and I am yours forever, and I promise to always cherish you💕. The days might not have been going well enough pn ha Ik I promise everything will be fine and great 🥲 I will always love you.</div>
+    </div>
+    
+    <h2>Our Song</h2>
+    <audio controls>
+        <source src="perfect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        function revealMessage() {
+            document.getElementById("specialMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
